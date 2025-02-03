@@ -1,0 +1,27 @@
+/* Global styles */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading style */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Processed image styling */
+#processed-image {
+    max-width: 90%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+}
