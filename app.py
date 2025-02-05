@@ -1,4 +1,6 @@
 import os
+os.system("apt-get update && apt-get install -y libgl1-mesa-glx")
+
 import cv2
 import numpy as np
 from flask import Flask, request, Response, render_template
