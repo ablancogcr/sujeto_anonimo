@@ -1,5 +1,5 @@
 const processedImage = document.getElementById("processed-image");
-// const serverUrl = "http://127.0.0.1:5000/upload" // Local server
+//const serverUrl = "http://127.0.0.1:5000/upload" // Local server
 const serverUrl = "https://sujetoanonimo-production.up.railway.app/upload"
 
 // Function to capture and send frames
