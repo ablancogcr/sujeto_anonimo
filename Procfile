@@ -1,1 +1,1 @@
-web: python app_haar.py
+web: bash start.sh
