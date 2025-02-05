@@ -1,2 +1,2 @@
 [phases.setup]
-nixPkgs = ["mesa"]
+nixPkgs = ["python39", "mesa", "pipenv"]
