@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujeto Anonimo</title>
+    <title>Sujeto Anónimo</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Sujeto Anonimo</h1>
-    <img id="processed-image" alt="Waiting for processed image...">
+    <div class="page-container">
+        <div class="image-container">
+            <div id="title-overlay" class="title-overlay">Sujeto Anónimo</div>
+            <img id="processed-image" alt="Waiting for processed image..." style="display: none;">
+            <div id="clock" class="clock-overlay" style="display: none;">00:00:00.000</div>
+            <div id="rec-indicator" class="rec-overlay" style="display: none;">
+                <div class="rec-circle"></div>
+                <span class="rec-text">REC</span>
+            </div>
+        </div>
+    </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
-

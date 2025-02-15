@@ -1,27 +1,95 @@
-/* Global styles */
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* Black background for the entire page */
+body, html {
     margin: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    padding: 0;
+    background-color: black;
+    color: white; /* Ensures any default text is readable */
+    height: 100%;
     font-family: Arial, sans-serif;
 }
 
-/* Heading style */
-h1 {
-    margin-bottom: 20px;
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
 }
 
-/* Processed image styling */
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
 #processed-image {
-    max-width: 90%;
-    height: auto;
-    border: 5px solid black;
+    display: block;
+    border: 2px solid white;
     border-radius: 10px;
-    background: white;
+    background: black;
     padding: 10px;
+    max-width: 90vw;
+    max-height: 80vh;
+    height: auto;
+}
+
+.title-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 2;
+}
+
+.clock-overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    text-align: left;
+}
+
+.rec-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: red;
+    font-size: 18px;
+}
+
+/* Red circle */
+.rec-circle {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* REC text */
+.rec-text {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
 }
